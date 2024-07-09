@@ -1,1 +1,107 @@
-/*# sourceMappingURL=App.css.map */
+@import url("https://fonts.cdnfonts.com/css/br-cobane");
+html * {
+  font-family: "";
+}
+
+#sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  background: #121212;
+  width: 35vmin;
+  height: 100dvh;
+  display: flex;
+  align-items: flex-start;
+  z-index: 99;
+  border-right: 1px #303030 solid;
+  padding-top: 7.5vmin;
+}
+#sidebar .sidebarItem {
+  width: 37.5vmin;
+  background: #202020;
+  padding: 1vmin;
+  padding-top: 1.5vmin;
+  padding-left: 6.5vmin;
+  font-size: 2vmin;
+  line-height: 3vmin;
+  color: #d8d8d8;
+  border-top-right-radius: 5vmin;
+  border-bottom-right-radius: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 400;
+  transition: 0.35s;
+  transform: translateX(-5vmin);
+  cursor: pointer;
+}
+#sidebar .sidebarItem:hover {
+  transform: translateX(-3.5vmin);
+  background: #272727;
+}
+
+#nav {
+  height: 7.5vmin;
+  width: 100dvw;
+  background: #121212;
+  position: fixed;
+  z-index: 999;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px #303030 solid;
+}
+
+#contents {
+  width: calc(100dvw - 35vmin);
+  height: calc(100dvh - 7.5vmin);
+  position: fixed;
+  top: 7.5vmin;
+  left: 35vmin;
+  background: #202020;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 85;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#contents .contentWrapper {
+  width: 125vmin;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-start;
+  padding: 5vmin 0;
+}
+#contents h1, #contents h2, #contents h3 {
+  width: 100%;
+}
+#contents h1 {
+  color: #fefefe;
+  font-size: 10vmin;
+}
+#contents h2 {
+  color: #f0f0f0;
+  font-size: 5vmin;
+  font-weight: 500;
+}
+#contents hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px #d8d8d8 solid;
+  margin: 2vmin 0;
+}
+#contents p {
+  width: 100%;
+  color: #d8d8d8;
+  font-size: 2.5vmin;
+}
+#contents ul {
+  width: 100%;
+  color: #d8d8d8;
+  font-size: 2.5vmin;
+}/*# sourceMappingURL=App.css.map */

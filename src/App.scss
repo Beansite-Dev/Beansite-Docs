@@ -1,0 +1,111 @@
+$bg1: #121212;
+$bg2: #202020;
+$bg3: #272727;
+$bg4: #303030;
+$txt1: #fefefe;
+$txt2: #f0f0f0;
+$txt3: #d8d8d8;
+$sbi-rad: 5vmin;
+@import url('https://fonts.cdnfonts.com/css/br-cobane');
+html * { font-family:''; }
+#sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    background: $bg1;
+    width: 35vmin;
+    height: 100dvh;
+    display: flex;
+    align-items: flex-start;
+    z-index: 99;
+    border-right: 1px $bg4 solid;
+    padding-top: 7.5vmin;
+    .sidebarItem {
+        width: 37.5vmin;
+        background: $bg2;
+        padding: 1vmin;
+        padding-top: 1.5vmin;
+        padding-left: 6.5vmin;
+        font-size: 2vmin;
+        line-height: 3vmin;
+        color: $txt3;
+        border-top-right-radius: $sbi-rad;
+        border-bottom-right-radius: $sbi-rad;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: 400;
+        transition: .35s;
+        transform: translateX(-5vmin);
+        cursor: pointer;
+        &:hover {
+            transform: translateX(-3.5vmin);
+            background: $bg3;
+        }
+    }
+}
+#nav {
+    height: 7.5vmin;
+    width: 100dvw;
+    background: $bg1;
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px $bg4 solid;
+}
+#contents {
+    width: calc(100dvw - 35vmin);
+    height: calc(100dvh - 7.5vmin);
+    position: fixed;
+    top: 7.5vmin;
+    left: 35vmin;
+    background: $bg2;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 85;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // padding: 5vmin;
+    .contentWrapper {
+        width: 125vmin;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: flex-start;
+        padding: 5vmin 0;
+    }
+    h1, h2, h3 {
+        width: 100%;
+    }
+    h1 {
+        color: $txt1;
+        font-size: 10vmin;
+    }
+    h2 {
+        color: $txt2;
+        font-size: 5vmin;
+        font-weight: 500;
+    }
+    hr {
+        width: 100%;
+        border: none;
+        border-bottom: 1px $txt3 solid;
+        margin: 2vmin 0;
+    }
+    p {
+        width: 100%;
+        color: $txt3;
+        font-size: 2.5vmin;
+    }
+    ul {
+        width: 100%;
+        color: $txt3;
+        font-size: 2.5vmin;
+    }
+}
